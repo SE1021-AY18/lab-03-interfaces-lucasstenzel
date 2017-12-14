@@ -9,14 +9,17 @@ public class Bolt implements Part {
     }
 
     public double getCost(){
+        double cost = USD_MULTIPLIER*diameterInches*lengthInches;
         return cost;
     }
 
     public String getName(){
+        String name = ""+ diameterInches + lengthInches + " bolt";
         return name;
     }
 
-    public getWeigth(){
+    public double getWeight(){
+        double weight = LBS_MULTIPLIER*Math.pow(diameterInches, 2)*lengthInches;
         return weight;
     }
 

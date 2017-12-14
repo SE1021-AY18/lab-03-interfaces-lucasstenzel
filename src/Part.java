@@ -1,10 +1,10 @@
 public interface Part {
 
-    public double getCost();
+    double getCost();
 
-    public String getName();
+    String getName();
 
-    public double getWeight();
+    double getWeight();
 
-    public void printBillOfMaterials();
+    void printBillOfMaterials();
 }

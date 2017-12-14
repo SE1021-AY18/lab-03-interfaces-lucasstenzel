@@ -4,14 +4,17 @@ public class Nut implements Part {
     public static final double USD_MULTIPLIER = 0.5;
 
     public double getCost(){
+        double cost = USD_MULTIPLIER;
         return cost;
     }
 
     public String getName(){
+        String name = ""+diameterInches+ " inch nut";
         return name;
     }
 
     public double getWeight(){
+        double weight = LBS_MULTIPLIER;
         return weight;
     }
 
