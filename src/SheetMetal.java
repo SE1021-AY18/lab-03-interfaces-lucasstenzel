@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class SheetMetal implements Part {
     public static final double LBS_MULTIPLIER = 0.1;
     private double lengthInches;
@@ -14,7 +16,6 @@ public class SheetMetal implements Part {
     public String getName(){
         String name = "" + lengthInches +"x"+ widthInches +"x"+ thicknessInches + " sheet";
         return name;
-        //sheet+dimensions?
     }
 
     public double getWeight(){
@@ -24,7 +25,14 @@ public class SheetMetal implements Part {
     }
 
     public void printBillOfMaterials(){
-
+        System.out.println("===============");
+        System.out.println(getName());
+        System.out.println("===============");
+        System.out.println("Length: " + lengthInches + " inches");
+        System.out.println("Width: " + widthInches + " inches");
+        System.out.println("Thickness: " + thicknessInches + " inches");
+        System.out.println("Cost: $" + getCost());
+        System.out.println("Weight: " + getWeight() + " lbs");
     }
 
     public SheetMetal(double lengthInches, double widthInches, double thicknessInches){
