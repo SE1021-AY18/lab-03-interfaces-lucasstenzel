@@ -1,5 +1,18 @@
+/*
+ * SE1021
+ * Winter 2017
+ * Lab 3 - Interfaces
+ * Name: Lucas Stenzel
+ * Created 12/14/2017
+ */
+
 import java.text.DecimalFormat;
 
+/**
+ * Class for creating a Nut with a specific diameter
+ * @author stenzell
+ * @version 1.0
+ */
 public class Nut implements Part {
     private double diameterInches;
     public static final double LBS_MULTIPLIER = 0.01;
